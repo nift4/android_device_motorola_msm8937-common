@@ -347,6 +347,7 @@ PRODUCT_PACKAGES += \
 
 # Shims
 PRODUCT_PACKAGES += \
+    libcharging_shim \
     libcutils_shim \
     libqsapshim
 
