@@ -29,6 +29,12 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
+# ARCore
+TARGET_INCLUDE_STOCK_ARCORE := true
+
+PRODUCT_COPY_FILES += \
+    vendor/extra/android.hardware.camera.ar.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.ar.xml
+
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
